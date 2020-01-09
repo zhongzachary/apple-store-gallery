@@ -24,27 +24,27 @@
 
 ## Jungfernstieg
 <img src="https://www.apple.com/de/retail/jungfernstieg/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image5_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image6_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image7_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image8_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image9_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image10_2x.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image2.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image3.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image4.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image5.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image6.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image7.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image8.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image9.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image10.jpg"/>
 
 ## Kurfürstendamm
 <img src="https://www.apple.com/de/retail/kurfuerstendamm/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image5_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image6_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image7_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image8_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image9_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image10_2x.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image2.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image3.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image4.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image5.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image6.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image7.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image8.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image9.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image10.jpg"/>
 
 ## MTZ
 <img src="https://www.apple.com/de/retail/mtz/images/hero_large_2x.jpg"/>
@@ -57,19 +57,19 @@
 
 ## Rosenstrasse
 <img src="https://www.apple.com/de/retail/rosenstrasse/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image5_2x.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image2.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image3.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image4.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image5.jpg"/>
 
 ## Schildergasse
 <img src="https://www.apple.com/de/retail/schildergasse/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image5_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image6_2x.jpg"/>
-<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image7_2x.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image2.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image3.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image4.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image5.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image6.jpg"/>
+<img src="https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image7.jpg"/>
 
 ## Sindelfingen
 <img src="https://www.apple.com/de/retail/sindelfingen/images/hero_large_2x.jpg"/>

@@ -5,13 +5,13 @@ from typing import List
 
 import pandas as pd
 import requests
+import tinycss2
 from lxml import html
 
 STORE_LIST = 'https://www.apple.com/retail/storelist/'
 XPATH_MAIN = '//section[contains(@class,"section-store-summary") or contains(@class, "section-hero")]//figure[not(contains(@class, "360") or contains(@class,"loading"))]/@class'
 XPATH_ADDITIONAL = '//div[contains(@class,"section-drawer")]//figure[not(contains(@class, "reptiles") or @class="image")]/@class'
 XPATH_STYLESHEET = '//link[contains(@href, "store.built.css") or contains(@href, "store.css")]/@href'
-IMAGE_SUFFIX = '_2x.jpg'
 APPLE_COM = 'https://www.apple.com'
 logging.basicConfig(filename='main.log', filemode='w', level=logging.INFO)
 
@@ -151,43 +151,90 @@ def get_html_stylesheets(tree, containing=None) -> List[str]:
     else:
         return [requests.get(APPLE_COM + sheet).content.decode() for sheet in stylesheets]
 
+def collect_related_css_stylesheets(tree, keywords) -> List[str]:
+    stylesheets = get_embedded_styles(tree) + get_html_stylesheets(tree)
+    output = []
+    for sheet in stylesheets:
+        for keyword in keywords:
+            if sheet.find(keyword) > -1:
+                output.append(sheet)
+                break
+    return output
 
-def find_url_in_style(name, style):
+def get_css_rules(stylesheets):
+    return [rule for stylesheet in stylesheets for rule in tinycss2.parse_stylesheet(stylesheet)]
+
+def find_urls_in_css_rules(name, css_rules):
     """
     Find the url of the given image name in the given style.
-    >>> find_url_in_style('image-hero', get_embedded_styles(get_html_tree('https://www.apple.com/retail/fifthavenue/'), 'image-hero')[0])
+    >>> stylesheet = get_embedded_styles(get_html_tree('https://www.apple.com/retail/fifthavenue/'), 'image-hero')[0]
+    >>> css_rules = tinycss2.parse_stylesheet(stylesheet, skip_comments=True, skip_whitespace=True)
+    >>> find_urls_in_css_rules('image-hero', css_rules)[1]
     'https://www.apple.com/retail/fifthavenue/images/hero_large_2x.jpg'
     """
-    partial_style = find_between(style, name, IMAGE_SUFFIX)
-    if partial_style == "":
-        return ""
-    else:
-        link = re.findall('url\("(.*)' + IMAGE_SUFFIX, partial_style+IMAGE_SUFFIX)[0]
-        link = link + IMAGE_SUFFIX
-        if link.find("://") > -1:
-            return link
-        else:
-            return APPLE_COM + link
+    urls = []
+    for rule in css_rules:
+        if rule.type == 'qualified-rule':
+            url = _get_url_if_contains_token_name(name, rule)
+            urls.append(_format_url(url)) if url else None
+        elif rule.type == 'at-rule' and rule.at_keyword == 'media':
+            nested_rules = tinycss2.parse_rule_list(rule.content, skip_whitespace=True)
+            urls.extend(find_urls_in_css_rules(name, nested_rules))
+    return urls
 
-def find_all_image_url(link):
+
+def _format_url(url):
+    """
+    Turn relative path into absolute path.
+    """
+    if url.find('://') > -1:
+        return url
+    else:
+        return APPLE_COM + url
+
+def _get_url_if_contains_token_name(name, rule):
+    """
+    Given a css qualified rule, return the url in the rule if the prelude of the rule contains the given name
+    """
+    return _get_url_in_components(rule.content) if _contains_token_name(name, rule.prelude) else None
+
+def _contains_token_name(name, css_comps) -> bool:
+    """
+    Given a list of css component values, look for if there is any IdentToken with the given value.
+    """
+    for comp in css_comps:
+        if comp.type == 'ident' and comp.value == name:
+            return True
+    return False
+
+def _get_url_in_components(css_comps):
+    for comp in css_comps:
+        if comp.type == 'url':
+            return comp.value
+    return None
+
+def find_all_image_urls(store):
     """
     The aggregate function that find all relevant images of an Apple Store website and locate their links in the right stylesheets.
-    >>> len(find_all_image_url('https://www.apple.com/retail/fifthavenue/'))
+    >>> len(find_all_image_urls('https://www.apple.com/retail/fifthavenue/'))
     7
-    >>> len(find_all_image_url('https://www.apple.com/it/retail/piazzaliberty/'))
+    >>> len(find_all_image_urls('https://www.apple.com/it/retail/piazzaliberty/'))
     10
     """
-    tree = get_html_tree(link)
+    tree = get_html_tree(store)
     image_names = get_main_images(tree)
     image_names.extend(get_additional_images(tree))
-    logging.info(str(len(image_names)) + " image(s) found in " + link)
+    stylesheets = collect_related_css_stylesheets(tree, image_names)
+    css_rules = get_css_rules(stylesheets)
+    logging.info("Finding " + str(len(image_names)) + " image(s) in " + str(len(stylesheets)) + " stylesheets for " + store)
     output = []
     for name in image_names:
-        styles = get_embedded_styles(tree, name)
-        if len(styles) == 0:
-            styles.extend(get_html_stylesheets(tree, name))
-        if not len(styles) == 0:
-            output.append(find_url_in_style(name, styles[0]))
+        urls = find_urls_in_css_rules(name, css_rules)
+        large_urls = list(filter(lambda l: l.find('large_2x') > -1, urls))
+        if len(large_urls) > 0:
+            output.append(large_urls[0])
+        elif len(urls) > 0:
+            output.append(urls[0])
         else:
             logging.critical(name + " not found.")
     return output
@@ -220,7 +267,7 @@ if __name__ == '__main__':
     for index, row in df_stores.iterrows():
         region = row['Region']
         website_link = row['Link']
-        image_links = find_all_image_url(website_link)
+        image_links = find_all_image_urls(website_link)
         counter = 1
         for link in image_links:
             all_images.append([region, index, counter, link])

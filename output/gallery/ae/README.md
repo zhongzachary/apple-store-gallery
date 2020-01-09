@@ -3,13 +3,13 @@
 
 ## Dubai Mall
 <img src="https://www.apple.com/ae/retail/dubaimall/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_2_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_3_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_4_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_5_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_6_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_7_2x.jpg"/>
-<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_8_2x.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_2.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_3.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_4.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_5.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_6.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_7.jpg"/>
+<img src="https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_8.jpg"/>
 
 ## Mall of the Emirates
 <img src="https://www.apple.com/ae/retail/malloftheemirates/images/hero_large_2x.jpg"/>

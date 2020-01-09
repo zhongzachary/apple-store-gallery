@@ -1,12 +1,12 @@
 Region,Store Name,#,Link
 ae,Dubai Mall,1,https://www.apple.com/ae/retail/dubaimall/images/hero_large_2x.jpg
-ae,Dubai Mall,2,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_2_2x.jpg
-ae,Dubai Mall,3,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_3_2x.jpg
-ae,Dubai Mall,4,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_4_2x.jpg
-ae,Dubai Mall,5,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_5_2x.jpg
-ae,Dubai Mall,6,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_6_2x.jpg
-ae,Dubai Mall,7,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_7_2x.jpg
-ae,Dubai Mall,8,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_8_2x.jpg
+ae,Dubai Mall,2,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_2.jpg
+ae,Dubai Mall,3,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_3.jpg
+ae,Dubai Mall,4,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_4.jpg
+ae,Dubai Mall,5,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_5.jpg
+ae,Dubai Mall,6,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_6.jpg
+ae,Dubai Mall,7,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_7.jpg
+ae,Dubai Mall,8,https://www.apple.com/ae/retail/store/images/galleries/dubaimall/images/dubaimall_image_8.jpg
 ae,Mall of the Emirates,1,https://www.apple.com/ae/retail/malloftheemirates/images/hero_large_2x.jpg
 ae,Mall of the Emirates,2,https://www.apple.com/ae/retail/store/images/galleries/malloftheemirates/images/malloftheemirates_gallery_image2_large_2x.jpg
 ae,Mall of the Emirates,3,https://www.apple.com/ae/retail/store/images/galleries/malloftheemirates/images/malloftheemirates_gallery_image3_large_2x.jpg
@@ -45,15 +45,15 @@ au,Perth City,1,https://www.apple.com/au/retail/perthcity/images/hero_large_2x.j
 au,Robina,1,https://www.apple.com/au/retail/robina/images/hero_large_2x.jpg
 au,Rundle Place,1,https://www.apple.com/au/retail/rundleplace/images/hero_large_2x.jpg
 au,Southland,1,https://www.apple.com/au/retail/southland/images/hero_large_2x.jpg
-au,Sydney,1,https://www.apple.com/au/retail/sydney/images/map_large_2x.jpg
+au,Sydney,1,https://www.apple.com/au/retail/sydney/images/hero_large_2x.png
 be,Brussels,1,https://www.apple.com/befr/retail/brussels/images/hero_large_2x.jpg
-be,Brussels,2,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image2_large_2x.jpg
-be,Brussels,3,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image3_large_2x.jpg
-be,Brussels,4,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image4_large_2x.jpg
-be,Brussels,5,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image5_large_2x.jpg
-be,Brussels,6,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image6_large_2x.jpg
-be,Brussels,7,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image7_large_2x.jpg
-be,Brussels,8,https://images.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image8_large_2x.jpg
+be,Brussels,2,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image2_large_2x.jpg
+be,Brussels,3,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image3_large_2x.jpg
+be,Brussels,4,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image4_large_2x.jpg
+be,Brussels,5,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image5_large_2x.jpg
+be,Brussels,6,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image6_large_2x.jpg
+be,Brussels,7,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image7_large_2x.jpg
+be,Brussels,8,https://www.apple.com/befr/retail/store/images/galleries/brussels/images/brussels_gallery_image8_large_2x.jpg
 br,Morumbi,1,https://www.apple.com/br/retail/morumbi/images/hero_large_2x.jpg
 br,VillageMall,1,https://www.apple.com/br/retail/villagemall/images/hero_large_2x.jpg
 ca,Bayshore Shopping Centre,1,https://www.apple.com/ca/retail/bayshoreshoppingcentre/images/hero_large_2x.jpg
@@ -172,40 +172,40 @@ de,Düsseldorf,1,https://www.apple.com/de/retail/duesseldorf/images/hero_large_2
 de,Grosse Bockenheimer Strasse,1,https://www.apple.com/de/retail/grossebockenheimerstrasse/images/hero_large_2x.jpg
 de,Hannover,1,https://www.apple.com/de/retail/hannover/images/hero_large_2x.jpg
 de,Jungfernstieg,1,https://www.apple.com/de/retail/jungfernstieg/images/hero_large_2x.jpg
-de,Jungfernstieg,2,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image2_2x.jpg
-de,Jungfernstieg,3,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image3_2x.jpg
-de,Jungfernstieg,4,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image4_2x.jpg
-de,Jungfernstieg,5,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image5_2x.jpg
-de,Jungfernstieg,6,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image6_2x.jpg
-de,Jungfernstieg,7,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image7_2x.jpg
-de,Jungfernstieg,8,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image8_2x.jpg
-de,Jungfernstieg,9,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image9_2x.jpg
-de,Jungfernstieg,10,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image10_2x.jpg
+de,Jungfernstieg,2,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image2.jpg
+de,Jungfernstieg,3,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image3.jpg
+de,Jungfernstieg,4,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image4.jpg
+de,Jungfernstieg,5,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image5.jpg
+de,Jungfernstieg,6,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image6.jpg
+de,Jungfernstieg,7,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image7.jpg
+de,Jungfernstieg,8,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image8.jpg
+de,Jungfernstieg,9,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image9.jpg
+de,Jungfernstieg,10,https://www.apple.com/de/retail/store/galleries/jungfernstieg/images/jungfernstieg_gallery_image10.jpg
 de,Kurfürstendamm,1,https://www.apple.com/de/retail/kurfuerstendamm/images/hero_large_2x.jpg
-de,Kurfürstendamm,2,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image2_2x.jpg
-de,Kurfürstendamm,3,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image3_2x.jpg
-de,Kurfürstendamm,4,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image4_2x.jpg
-de,Kurfürstendamm,5,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image5_2x.jpg
-de,Kurfürstendamm,6,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image6_2x.jpg
-de,Kurfürstendamm,7,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image7_2x.jpg
-de,Kurfürstendamm,8,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image8_2x.jpg
-de,Kurfürstendamm,9,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image9_2x.jpg
-de,Kurfürstendamm,10,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image10_2x.jpg
+de,Kurfürstendamm,2,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image2.jpg
+de,Kurfürstendamm,3,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image3.jpg
+de,Kurfürstendamm,4,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image4.jpg
+de,Kurfürstendamm,5,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image5.jpg
+de,Kurfürstendamm,6,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image6.jpg
+de,Kurfürstendamm,7,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image7.jpg
+de,Kurfürstendamm,8,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image8.jpg
+de,Kurfürstendamm,9,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image9.jpg
+de,Kurfürstendamm,10,https://www.apple.com/de/retail/store/galleries/kurfuerstendamm/images/kurfuerstendamm_gallery_image10.jpg
 de,MTZ,1,https://www.apple.com/de/retail/mtz/images/hero_large_2x.jpg
 de,OEZ,1,https://www.apple.com/de/retail/oez/images/hero_large_2x.jpg
 de,Rhein Center,1,https://www.apple.com/de/retail/rheincenter/images/hero_large_2x.jpg
 de,Rosenstrasse,1,https://www.apple.com/de/retail/rosenstrasse/images/hero_large_2x.jpg
-de,Rosenstrasse,2,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image2_2x.jpg
-de,Rosenstrasse,3,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image3_2x.jpg
-de,Rosenstrasse,4,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image4_2x.jpg
-de,Rosenstrasse,5,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image5_2x.jpg
+de,Rosenstrasse,2,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image2.jpg
+de,Rosenstrasse,3,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image3.jpg
+de,Rosenstrasse,4,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image4.jpg
+de,Rosenstrasse,5,https://www.apple.com/de/retail/store/galleries/rosenstrasse/images/rosenstrasse_gallery_image5.jpg
 de,Schildergasse,1,https://www.apple.com/de/retail/schildergasse/images/hero_large_2x.jpg
-de,Schildergasse,2,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image2_2x.jpg
-de,Schildergasse,3,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image3_2x.jpg
-de,Schildergasse,4,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image4_2x.jpg
-de,Schildergasse,5,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image5_2x.jpg
-de,Schildergasse,6,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image6_2x.jpg
-de,Schildergasse,7,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image7_2x.jpg
+de,Schildergasse,2,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image2.jpg
+de,Schildergasse,3,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image3.jpg
+de,Schildergasse,4,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image4.jpg
+de,Schildergasse,5,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image5.jpg
+de,Schildergasse,6,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image6.jpg
+de,Schildergasse,7,https://www.apple.com/de/retail/store/galleries/schildergasse/images/schildergasse_gallery_image7.jpg
 de,Sindelfingen,1,https://www.apple.com/de/retail/sindelfingen/images/hero_large_2x.jpg
 es,Calle Colón,1,https://www.apple.com/es/retail/callecolon/images/hero_large_2x.jpg
 es,Gran Plaza 2,1,https://www.apple.com/es/retail/granplaza2/images/hero_large_2x.jpg
@@ -214,16 +214,16 @@ es,La Maquinista,1,https://www.apple.com/es/retail/lamaquinista/images/hero_larg
 es,Nueva Condomina,1,https://www.apple.com/es/retail/nuevacondomina/images/hero_large_2x.jpg
 es,Parquesur,1,https://www.apple.com/es/retail/parquesur/images/hero_large_2x.jpg
 es,Passeig de Gràcia,1,https://www.apple.com/es/retail/passeigdegracia/images/hero_large_2x.jpg
-es,Passeig de Gràcia,2,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image2_2x.jpg
-es,Passeig de Gràcia,3,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image3_2x.jpg
-es,Passeig de Gràcia,4,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image4_2x.jpg
-es,Passeig de Gràcia,5,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image5_2x.jpg
-es,Passeig de Gràcia,6,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image6_2x.jpg
+es,Passeig de Gràcia,2,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image2.jpg
+es,Passeig de Gràcia,3,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image3.jpg
+es,Passeig de Gràcia,4,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image4.jpg
+es,Passeig de Gràcia,5,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image5.jpg
+es,Passeig de Gràcia,6,https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image6.jpg
 es,Puerta del Sol,1,https://www.apple.com/es/retail/puertadelsol/images/hero_large_2x.jpg
-es,Puerta del Sol,2,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image2_2x.jpg
-es,Puerta del Sol,3,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image3_2x.jpg
-es,Puerta del Sol,4,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image4_2x.jpg
-es,Puerta del Sol,5,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image5_2x.jpg
+es,Puerta del Sol,2,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image2.jpg
+es,Puerta del Sol,3,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image3.jpg
+es,Puerta del Sol,4,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image4.jpg
+es,Puerta del Sol,5,https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image5.jpg
 es,Puerto Venecia,1,https://www.apple.com/es/retail/puertovenecia/images/hero_large_2x.jpg
 es,Río Shopping,1,https://www.apple.com/es/retail/rioshopping/images/hero_large_2x.jpg
 es,Xanadú,1,https://www.apple.com/es/retail/xanadu/images/hero_large_2x.jpg
@@ -342,10 +342,10 @@ mx,Antara,3,https://www.apple.com/mx/retail/store/images/galleries/antara/images
 mx,Antara,4,https://www.apple.com/mx/retail/store/images/galleries/antara/images/antara_gallery_image4_large_2x.jpg
 mx,Vía Santa Fe,1,https://www.apple.com/mx/retail/viasantafe/images/hero_large_2x.jpg
 nl,Amsterdam,1,https://www.apple.com/nl/retail/amsterdam/images/hero_large_2x.jpg
-nl,Amsterdam,2,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image2_2x.jpg
-nl,Amsterdam,3,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image3_2x.jpg
-nl,Amsterdam,4,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image4_2x.jpg
-nl,Amsterdam,5,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image5_2x.jpg
+nl,Amsterdam,2,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image2.jpg
+nl,Amsterdam,3,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image3.jpg
+nl,Amsterdam,4,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image4.jpg
+nl,Amsterdam,5,https://www.apple.com/nl/retail/store/galleries/amsterdam/images/amsterdam_gallery_image5.jpg
 nl,Den Haag,1,https://www.apple.com/nl/retail/denhaag/images/hero_large_2x.jpg
 nl,Haarlem,1,https://www.apple.com/nl/retail/haarlem/images/hero_large_2x.jpg
 se,Emporia,1,https://www.apple.com/se/retail/emporia/images/hero_large_2x.jpg
@@ -356,11 +356,11 @@ sg,Orchard Road,1,https://www.apple.com/sg/retail/orchardroad/images/hero_large_
 th,Iconsiam,1,https://www.apple.com/th/retail/iconsiam/images/hero_large_2x.jpg
 tr,Akasya,1,https://www.apple.com/tr/retail/akasya/images/hero_large_2x.jpg
 tr,Zorlu Center,1,https://www.apple.com/tr/retail/zorlucenter/images/hero_large_2x.jpg
-tr,Zorlu Center,2,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image2_2x.jpg
-tr,Zorlu Center,3,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image3_2x.jpg
-tr,Zorlu Center,4,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image4_2x.jpg
-tr,Zorlu Center,5,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image5_2x.jpg
-tr,Zorlu Center,6,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image6_2x.jpg
+tr,Zorlu Center,2,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image2.jpg
+tr,Zorlu Center,3,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image3.jpg
+tr,Zorlu Center,4,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image4.jpg
+tr,Zorlu Center,5,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image5.jpg
+tr,Zorlu Center,6,https://www.apple.com/tr/retail/store/galleries/zorlucenter/images/zorlucenter_gallery_image6.jpg
 tw,Taipei 101,1,https://www.apple.com/tw/retail/taipei101/images/hero_large_2x.jpg
 tw,Xinyi A13,1,https://www.apple.com/tw/retail/xinyia13/images/hero_large_2x.jpg
 uk,Bentall Centre,1,https://www.apple.com/uk/retail/bentallcentre/images/hero_large_2x.jpg
@@ -374,11 +374,11 @@ uk,Cabot Circus,1,https://www.apple.com/uk/retail/cabotcircus/images/hero_large_
 uk,Chapelfield,1,https://www.apple.com/uk/retail/chapelfield/images/hero_large_2x.jpg
 uk,Churchill Square,1,https://www.apple.com/uk/retail/churchillsquare/images/hero_large_2x.jpg
 uk,Covent Garden,1,https://www.apple.com/uk/retail/coventgarden/images/hero_large_2x.jpg
-uk,Covent Garden,2,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image2_2x.jpg
-uk,Covent Garden,3,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image3_2x.jpg
-uk,Covent Garden,4,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image4_2x.jpg
-uk,Covent Garden,5,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image5_2x.jpg
-uk,Covent Garden,6,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image6_2x.jpg
+uk,Covent Garden,2,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image2.jpg
+uk,Covent Garden,3,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image3.jpg
+uk,Covent Garden,4,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image4.jpg
+uk,Covent Garden,5,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image5.jpg
+uk,Covent Garden,6,https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image6.jpg
 uk,Cribbs Causeway,1,https://www.apple.com/uk/retail/cribbscauseway/images/hero_large_2x.jpg
 uk,Drake Circus,1,https://www.apple.com/uk/retail/drakecircus/images/hero_large_2x.jpg
 uk,Eldon Square,1,https://www.apple.com/uk/retail/eldonsquare/images/hero_large_2x.jpg
@@ -394,13 +394,13 @@ uk,Milton Keynes,1,https://www.apple.com/uk/retail/miltonkeynes/images/hero_larg
 uk,Princes Street,1,https://www.apple.com/uk/retail/princesstreet/images/hero_large_2x.jpg
 uk,Princesshay,1,https://www.apple.com/uk/retail/princesshay/images/hero_large_2x.jpg
 uk,Regent Street,1,https://www.apple.com/uk/retail/regentstreet/images/hero_large_2x.jpg
-uk,Regent Street,2,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image2_2x.jpg
-uk,Regent Street,3,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image3_2x.jpg
-uk,Regent Street,4,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image4_2x.jpg
-uk,Regent Street,5,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image5_2x.jpg
-uk,Regent Street,6,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image6_2x.jpg
-uk,Regent Street,7,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image7_2x.jpg
-uk,Regent Street,8,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image8_2x.jpg
+uk,Regent Street,2,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image2.jpg
+uk,Regent Street,3,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image3.jpg
+uk,Regent Street,4,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image4.jpg
+uk,Regent Street,5,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image5.jpg
+uk,Regent Street,6,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image6.jpg
+uk,Regent Street,7,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image7.jpg
+uk,Regent Street,8,https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image8.jpg
 uk,SouthGate,1,https://www.apple.com/uk/retail/southgate/images/hero_large_2x.jpg
 uk,Southampton,1,https://www.apple.com/uk/retail/southampton/images/hero_large_2x.jpg
 uk,St David’s 2,1,https://www.apple.com/uk/retail/stdavids2/images/hero_large_2x.jpg
@@ -488,7 +488,7 @@ us,Columbia,1,https://www.apple.com/retail/columbia/images/hero_large_2x.jpg
 us,CoolSprings Galleria,1,https://www.apple.com/retail/coolspringsgalleria/images/hero_large_2x.jpg
 us,Corte Madera,1,https://www.apple.com/retail/cortemadera/images/hero_large_2x.jpg
 us,Country Club Plaza,1,https://www.apple.com/retail/countryclubplaza/images/hero_large_2x.jpg
-us,Crabtree Valley Mall,1,https://www.apple.com/retail/crabtreevalleymall/images/map_large_2x.jpg
+us,Crabtree Valley Mall,1,https://www.apple.com/retail/crabtreevalleymall/images/hero_large_2x.png
 us,Crocker Park,1,https://www.apple.com/retail/crockerpark/images/hero_large_2x.jpg
 us,Crossgates,1,https://www.apple.com/retail/crossgates/images/hero_large_2x.jpg
 us,Cumberland Mall,1,https://www.apple.com/retail/cumberlandmall/images/hero_large_2x.jpg
@@ -736,7 +736,7 @@ us,Waterside Shops,1,https://www.apple.com/retail/watersideshops/images/hero_lar
 us,Wellington Green,1,https://www.apple.com/retail/wellingtongreen/images/hero_large_2x.jpg
 us,West 14th Street,1,https://www.apple.com/retail/west14thstreet/images/hero_large_2x.jpg
 us,West 14th Street,2,https://www.apple.com/retail/store/images/galleries/west14thstreet/images/west14thstreet_gallery_image2_large_2x.jpg
-us,West 14th Street,3,https://www.apple.com/retail/store/images/galleries/uppereastside/images/ues_gallery_image1_large_2x.jpg
+us,West 14th Street,3,https://www.apple.com/retail/store/images/galleries/west14thstreet/images/west14thstreet_gallery_image3_large_2x.png
 us,West 14th Street,4,https://www.apple.com/retail/store/images/galleries/west14thstreet/images/west14thstreet_gallery_image4_large_2x.jpg
 us,West County,1,https://www.apple.com/retail/westcounty/images/hero_large_2x.jpg
 us,West Town Mall,1,https://www.apple.com/retail/westtownmall/images/hero_large_2x.jpg

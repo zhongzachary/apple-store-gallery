@@ -21,18 +21,18 @@
 
 ## Passeig de Gràcia
 <img src="https://www.apple.com/es/retail/passeigdegracia/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image5_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image6_2x.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image2.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image3.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image4.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image5.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/passeigdegracia/images/passeigdegarcia_gallery_image6.jpg"/>
 
 ## Puerta del Sol
 <img src="https://www.apple.com/es/retail/puertadelsol/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image5_2x.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image2.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image3.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image4.jpg"/>
+<img src="https://www.apple.com/es/retail/store/galleries/puertadelsol/images/puertadelsol_gallery_image5.jpg"/>
 
 ## Puerto Venecia
 <img src="https://www.apple.com/es/retail/puertovenecia/images/hero_large_2x.jpg"/>

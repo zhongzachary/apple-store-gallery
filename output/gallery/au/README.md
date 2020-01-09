@@ -72,4 +72,4 @@
 <img src="https://www.apple.com/au/retail/southland/images/hero_large_2x.jpg"/>
 
 ## Sydney
-<img src="https://www.apple.com/au/retail/sydney/images/map_large_2x.jpg"/>
+<img src="https://www.apple.com/au/retail/sydney/images/hero_large_2x.png"/>

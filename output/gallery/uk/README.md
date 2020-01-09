@@ -33,11 +33,11 @@
 
 ## Covent Garden
 <img src="https://www.apple.com/uk/retail/coventgarden/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image5_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image6_2x.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image2.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image3.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image4.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image5.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/coventgarden/images/coventgarden_gallery_image6.jpg"/>
 
 ## Cribbs Causeway
 <img src="https://www.apple.com/uk/retail/cribbscauseway/images/hero_large_2x.jpg"/>
@@ -83,13 +83,13 @@
 
 ## Regent Street
 <img src="https://www.apple.com/uk/retail/regentstreet/images/hero_large_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image2_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image3_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image4_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image5_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image6_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image7_2x.jpg"/>
-<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image8_2x.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image2.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image3.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image4.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image5.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image6.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image7.jpg"/>
+<img src="https://www.apple.com/uk/retail/store/galleries/regentstreet/images/regentstreet_gallery_image8.jpg"/>
 
 ## SouthGate
 <img src="https://www.apple.com/uk/retail/southgate/images/hero_large_2x.jpg"/>

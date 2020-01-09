@@ -181,7 +181,7 @@
 <img src="https://www.apple.com/retail/countryclubplaza/images/hero_large_2x.jpg"/>
 
 ## Crabtree Valley Mall
-<img src="https://www.apple.com/retail/crabtreevalleymall/images/map_large_2x.jpg"/>
+<img src="https://www.apple.com/retail/crabtreevalleymall/images/hero_large_2x.png"/>
 
 ## Crocker Park
 <img src="https://www.apple.com/retail/crockerpark/images/hero_large_2x.jpg"/>
@@ -843,7 +843,7 @@
 ## West 14th Street
 <img src="https://www.apple.com/retail/west14thstreet/images/hero_large_2x.jpg"/>
 <img src="https://www.apple.com/retail/store/images/galleries/west14thstreet/images/west14thstreet_gallery_image2_large_2x.jpg"/>
-<img src="https://www.apple.com/retail/store/images/galleries/uppereastside/images/ues_gallery_image1_large_2x.jpg"/>
+<img src="https://www.apple.com/retail/store/images/galleries/west14thstreet/images/west14thstreet_gallery_image3_large_2x.png"/>
 <img src="https://www.apple.com/retail/store/images/galleries/west14thstreet/images/west14thstreet_gallery_image4_large_2x.jpg"/>
 
 ## West County
