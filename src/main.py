@@ -1,5 +1,6 @@
 import logging
 import re
+import time
 import urllib.request
 from typing import List
 
@@ -14,6 +15,7 @@ XPATH_ADDITIONAL = '//div[contains(@class,"section-drawer")]//figure[not(contain
 XPATH_STYLESHEET = '//link[contains(@href, "store.built.css") or contains(@href, "store.css")]/@href'
 APPLE_COM = 'https://www.apple.com'
 logging.basicConfig(filename='main.log', filemode='w', level=logging.INFO)
+
 
 def get_store_list() -> pd.DataFrame:
     """
@@ -151,6 +153,7 @@ def get_html_stylesheets(tree, containing=None) -> List[str]:
     else:
         return [requests.get(APPLE_COM + sheet).content.decode() for sheet in stylesheets]
 
+
 def collect_related_css_stylesheets(tree, keywords) -> List[str]:
     stylesheets = get_embedded_styles(tree) + get_html_stylesheets(tree)
     output = []
@@ -161,8 +164,10 @@ def collect_related_css_stylesheets(tree, keywords) -> List[str]:
                 break
     return output
 
+
 def get_css_rules(stylesheets):
     return [rule for stylesheet in stylesheets for rule in tinycss2.parse_stylesheet(stylesheet)]
+
 
 def find_urls_in_css_rules(name, css_rules):
     """
@@ -192,11 +197,13 @@ def _format_url(url):
     else:
         return APPLE_COM + url
 
+
 def _get_url_if_contains_token_name(name, rule):
     """
     Given a css qualified rule, return the url in the rule if the prelude of the rule contains the given name
     """
     return _get_url_in_components(rule.content) if _contains_token_name(name, rule.prelude) else None
+
 
 def _contains_token_name(name, css_comps) -> bool:
     """
@@ -207,11 +214,13 @@ def _contains_token_name(name, css_comps) -> bool:
             return True
     return False
 
+
 def _get_url_in_components(css_comps):
     for comp in css_comps:
         if comp.type == 'url':
             return comp.value
     return None
+
 
 def find_all_image_urls(store):
     """
@@ -226,7 +235,8 @@ def find_all_image_urls(store):
     image_names.extend(get_additional_images(tree))
     stylesheets = collect_related_css_stylesheets(tree, image_names)
     css_rules = get_css_rules(stylesheets)
-    logging.info("Finding " + str(len(image_names)) + " image(s) in " + str(len(stylesheets)) + " stylesheets for " + store)
+    logging.info(
+        "Finding " + str(len(image_names)) + " image(s) in " + str(len(stylesheets)) + " stylesheets for " + store)
     output = []
     for name in image_names:
         urls = find_urls_in_css_rules(name, css_rules)
@@ -239,6 +249,7 @@ def find_all_image_urls(store):
             logging.critical(name + " not found.")
     return output
 
+
 def get_cn_hidden_images():
     """
     Eastern eggs in the following stylesheet.
@@ -249,6 +260,7 @@ def get_cn_hidden_images():
     items = ['https' + item[0] + 'retail/store/images/' + item[1] + 'large_2x.jpg' for item in items]
     return items
 
+
 def save_image(link, name):
     """
     Save the linked image as the given name
@@ -257,10 +269,18 @@ def save_image(link, name):
     """
     urllib.request.urlretrieve(link, name)
 
+
+def print_and_log(msg):
+    print(msg)
+    logging.info(msg)
+
+
 if __name__ == '__main__':
     # get a data frame of apple stores
     df_stores = get_store_list()
     df_stores.to_csv('../output/apple_store_list.csv')
+    print_and_log('Finding images for {0} Apple Stores.'.format(str(df_stores.shape[0])))
+    start_time = time.time()
 
     # get a data frame of images
     all_images = []
@@ -272,6 +292,11 @@ if __name__ == '__main__':
         for link in image_links:
             all_images.append([region, index, counter, link])
             counter += 1
+
+    time_elapsed = time.time() - start_time
+    print_and_log("{0} images located in {1}.".format(len(all_images),
+                                                      time.strftime('%M minutes and %S seconds', time.gmtime(time_elapsed))))
+
     df_images = pd.DataFrame(data=all_images, columns=['Region', 'Store Name', '#', 'Link'])
-    df_images.sort_values(by=['Region', 'Store Name'], inplace=True)
     df_images.to_csv(path_or_buf='../output/all_images.csv', index=False)
+    print_and_log("Image links are saved to ../output/all_images.csv.")
