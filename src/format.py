@@ -6,13 +6,7 @@ import os
 import pycountry as pycountry
 from main import *
 
-df_stores = pd.read_csv('../output/apple_store_list.csv', index_col=0)
 df_images = pd.read_csv('../output/all_images.csv')
-
-
-def get_store_link(store_name):
-    return df_stores.at[store_name, 'Link']
-
 
 def get_region_name(code: str):
     """
@@ -36,13 +30,15 @@ gallery_root = '../output/gallery/'
 os.makedirs(gallery_root, exist_ok=True)
 md_main = open(gallery_root + 'README.md', 'w')
 md_main.write("# Apple Stores Around the World\n")
+md_main.write('## Apple Stores in Each Region\n')
 
+selected_stores_indices = set()
 region = ''
 store = ''
 md_curr = None
 
 for index, row in df_images.iterrows():
-    if not row['Region'] == region:
+    if not row['Region'] == region:  # new region
         region = row['Region']
 
         md_curr.close() if md_curr else None
@@ -51,19 +47,32 @@ for index, row in df_images.iterrows():
 
         region_name = get_region_name(region)
 
-        md_main.write('\n## {0}\n'.format(region_name))
+        md_main.write('\n- [{0}](./{1})\n'.format(region_name, region))
         md_curr.write('\n# {0}\n'.format(region_name))
 
     if not row['Store Name'] == store:
         store = row['Store Name']
 
-        store_title = '[{0}]({1})'.format(store, get_store_link(store))
-        md_main.write('\n**{0}**\n'.format(store_title))
+        store_title = '[{0}]({1})'.format(store, row['Store Link'])
         md_curr.write('\n## {0}\n'.format(store_title))
-
-    image_link = '<img src="{0}"/>\n'.format(row['Link'])
-    md_main.write(image_link)
+    else:  # it is a important store
+        selected_stores_indices.add(index-1)
+        selected_stores_indices.add(index)
+    image_link = '\n<img src="{0}"/>\n'.format(row['Link'])
     md_curr.write(image_link)
 
 md_curr.close()
+
+store = ''
+md_main.write('\n## Selected Stores\n')
+for index, row in df_images.iterrows():
+    curr_store = row['Store Name']
+    if index in selected_stores_indices:
+        if not curr_store == store:
+            store = row['Store Name']
+            store_title = '[{0}]({1}), {2}'.format(store, row['Store Link'], row['Region'].upper())
+            md_main.write('\n### {0}\n'.format(store_title))
+        image_link = '\n<img src="{0}"/>\n'.format(row['Link'])
+        md_main.write(image_link)
+
 md_main.close()

@@ -286,17 +286,17 @@ if __name__ == '__main__':
     all_images = []
     for index, row in df_stores.iterrows():
         region = row['Region']
-        website_link = row['Link']
-        image_links = find_all_image_urls(website_link)
+        store_link = row['Link']
+        image_links = find_all_image_urls(store_link)
         counter = 1
         for link in image_links:
-            all_images.append([region, index, counter, link])
+            all_images.append([region, index, counter, link, store_link])
             counter += 1
 
     time_elapsed = time.time() - start_time
     print_and_log("{0} images located in {1}.".format(len(all_images),
                                                       time.strftime('%M minutes and %S seconds', time.gmtime(time_elapsed))))
 
-    df_images = pd.DataFrame(data=all_images, columns=['Region', 'Store Name', '#', 'Link'])
+    df_images = pd.DataFrame(data=all_images, columns=['Region', 'Store Name', '#', 'Link', 'Store Link'])
     df_images.to_csv(path_or_buf='../output/all_images.csv', index=False)
     print_and_log("Image links are saved to ../output/all_images.csv.")
