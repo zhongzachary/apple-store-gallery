@@ -32,9 +32,9 @@ for index, row in df_images.iterrows():
     if not row['Store Name'] == store:
         store = row['Store Name']
 
-        md_main.write('###' + store + "\n")
+        md_main.write('### ' + store + "\n")
 
-        md_curr.write('##' + store + "\n")
+        md_curr.write('## ' + store + "\n")
 
     md_main.write('<img src="' + str(row['Link']) + '"/>\n')
     md_curr.write('<img src="' + str(row['Link']) + '"/>\n')
