@@ -6,7 +6,7 @@
 
 ## Scraping Image Links
 
-In terminal, run
+In terminal, run (**warning**: depend on your internet speed, it may take about 10 minutes)
 
 ```bash
 python3 main.py
