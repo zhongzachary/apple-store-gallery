@@ -79,7 +79,7 @@ With that in mind, we can pull all the relevant image names in the html we reque
 
 However, there are two issues:
 
-1. The last two image names are in fact not useful to us. They are here because [Apple Grand Central]('https://www.apple.com/retail/grandcentral/') provides a 360-degree viewer, and at this stage, I am not able to pull the media within that viewer. To solve this issue, see [Updating XPath](#Updating-XPath).
+1. The last two image names are in fact not useful to us. They are here because [Apple Grand Central]('https://www.apple.com/retail/grandcentral/') provides a 360-degree viewer. This issue was not  occuring when I performed XPath search using a browser. To solve this issue, see [Updating XPath](#Updating-XPath).
 2. More importantly, the actual link to the image file is in fact not embedded in corresponding html element. The solution is discuss in [Finding the Links](#Finding-the-Links)
 
 ### Updating XPath
@@ -87,13 +87,13 @@ However, there are two issues:
 Since we want our XPath query to locate only those images that we care about, we will use the following the locate the image names in the main container:
 
 ```xquery
-//div[@id="main"]/section[2]//figure[not(contains(@class, "360") or contains(@class,"loading"))]/@class
+//section[contains(@class,"section-store-summary") or contains(@class, "section-hero")]//figure[not(contains(@class, "360") or contains(@class,"loading"))]/@class
 ```
 
-Along with this XPath to find all the additional images in a [⭐️⭐️⭐️ Stores](#⭐️⭐️⭐️-Stores) (none if it is not a  [⭐️⭐️⭐️ Stores](#⭐️⭐️⭐️-Stores)),
+Similar issues also occur occassionally for the XPath used to find additional images in a [⭐️⭐️⭐️ Stores](#⭐️⭐️⭐️-Stores). 
 
 ```xquery
-//div[@id="main"]/div[2]//figure/@class
+//div[contains(@class,"section-drawer")]//figure[not(contains(@class, "reptiles") or @class="image")]/@class
 ```
 
 we can get all the image names.

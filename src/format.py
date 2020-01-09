@@ -7,6 +7,8 @@ from main import *
 
 df_images = pd.read_csv('../output/all_images.csv')
 
+
+
 md = open('../output/gallery.md', 'w')
 md.write("# Apple Stores Around the World\n")
 

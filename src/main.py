@@ -8,8 +8,8 @@ import requests
 from lxml import html
 
 STORE_LIST = 'https://www.apple.com/retail/storelist/'
-XPATH_MAIN = '//div[@id="main"]/section[2]//figure[not(contains(@class, "360") or contains(@class,"loading"))]/@class'
-XPATH_ADDITIONAL = '//div[@id="main"]/div[2]//figure/@class'
+XPATH_MAIN = '//section[contains(@class,"section-store-summary") or contains(@class, "section-hero")]//figure[not(contains(@class, "360") or contains(@class,"loading"))]/@class'
+XPATH_ADDITIONAL = '//div[contains(@class,"section-drawer")]//figure[not(contains(@class, "reptiles") or @class="image")]/@class'
 XPATH_STYLESHEET = '//link[contains(@href, "store.built.css") or contains(@href, "store.css")]/@href'
 IMAGE_SUFFIX = '_large_2x.jpg'
 APPLE_COM = 'https://www.apple.com'
@@ -97,7 +97,8 @@ def find_before(str, beg_str, default=''):
 def get_main_images(tree) -> List[str]:
     """
     Get the class name of the images in the main container.
-    >>> get_main_images(get_html_tree('https://www.apple.com/hk/en/retail/ifcmall/'))
+    >>> len(get_main_images(get_html_tree('https://www.apple.com/hk/en/retail/ifcmall/')))
+    8
     """
     classes = tree.xpath(XPATH_MAIN)
     output = []
@@ -111,8 +112,11 @@ def get_main_images(tree) -> List[str]:
 
 def get_additional_images(tree) -> List[str]:
     """
+    Get the class name of the additional images that are not located in the main container.
     >>> len(get_additional_images(get_html_tree('https://www.apple.com/it/retail/piazzaliberty/')))
     9
+    >>> len(get_additional_images(get_html_tree('https://www.apple.com/retail/carnegielibrary/')))
+    7
     """
     classes = tree.xpath(XPATH_ADDITIONAL)
     return [cname.split()[-1] for cname in classes]
@@ -120,7 +124,9 @@ def get_additional_images(tree) -> List[str]:
 
 def get_embedded_styles(tree, containing=None):
     """
-    >>> get_embedded_styles(get_html_tree('https://www.apple.com/retail/fifthavenue/'), 'image-hero')
+    Get embedded styles in a html tree that contains the given string.
+    >>> len(get_embedded_styles(get_html_tree('https://www.apple.com/retail/fifthavenue/'), 'image-hero'))
+    1
     """
     xpath_style = '//style' + ('[contains(.,"' + containing + '")]' if containing else '') + '/text()'
     return tree.xpath(xpath_style)
@@ -128,8 +134,9 @@ def get_embedded_styles(tree, containing=None):
 
 def get_html_stylesheets(tree, containing=None) -> List[str]:
     """
+    Get the store.built.css or store.css that is linked in the given html tree
     >>> len(get_html_stylesheets(get_html_tree('https://www.apple.com/hk/en/retail/ifcmall/')))
-    2
+    3
     >>> len(get_html_stylesheets(get_html_tree('https://www.apple.com/hk/en/retail/ifcmall/'), 'image-retail-store-galleries-ifcmall-ifcmall-gallery-image2'))
     1
     """
@@ -147,7 +154,9 @@ def get_html_stylesheets(tree, containing=None) -> List[str]:
 
 def find_url_in_style(name, style):
     """
+    Find the url of the given image name in the given style.
     >>> find_url_in_style('image-hero', get_embedded_styles(get_html_tree('https://www.apple.com/retail/fifthavenue/'), 'image-hero')[0])
+    'https://www.apple.com/retail/fifthavenue/images/hero_large_2x.jpg'
     """
     partial_style = find_between(style, name, IMAGE_SUFFIX)
     if partial_style == "":
@@ -158,6 +167,7 @@ def find_url_in_style(name, style):
 
 def find_all_image_url(link):
     """
+    The aggregate function that find all relevant images of an Apple Store website and locate their links in the right stylesheets.
     >>> len(find_all_image_url('https://www.apple.com/retail/fifthavenue/'))
     7
     >>> len(find_all_image_url('https://www.apple.com/it/retail/piazzaliberty/'))
@@ -180,23 +190,21 @@ def find_all_image_url(link):
 
 def get_cn_hidden_images():
     """
-    >>> get_cn_hidden_images()
+    Eastern eggs in the following stylesheet.
     """
     cn_stylesheet = 'https://www.apple.com.cn/cn/retail/store/styles/store.built.css'
-    content = requests.get(cn_stylesheet).content.decode("utf-8")
+    content = requests.get(cn_stylesheet).content.decode()
     items = re.findall('https(.*)retail/store/images/(.*)large_2x.jpg', content)
     items = ['https' + item[0] + 'retail/store/images/' + item[1] + 'large_2x.jpg' for item in items]
     return items
 
 def save_image(link, name):
+    """
+    Save the linked image as the given name
+    :param link: link of a image
+    :param name: the save-as name
+    """
     urllib.request.urlretrieve(link, name)
-
-def save_photos_to(image_list, location):
-    counter = 1
-    for image in image_list:
-        urllib.request.urlretrieve(image, location + image.split("/")[-1])
-        counter += 1
-
 
 if __name__ == '__main__':
     # get a data frame of apple stores
@@ -214,5 +222,5 @@ if __name__ == '__main__':
             all_images.append([region, index, counter, link])
             counter += 1
     df_images = pd.DataFrame(data=all_images, columns=['Region', 'Store Name', '#', 'Link'])
-    df_images.sort_values(by=['Region', 'Store Name'])
+    df_images.sort_values(by=['Region', 'Store Name'], inplace=True)
     df_images.to_csv(path_or_buf='../output/all_images.csv', index=False)
