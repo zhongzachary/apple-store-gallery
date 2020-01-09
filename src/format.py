@@ -51,16 +51,15 @@ for index, row in df_images.iterrows():
 
         region_name = get_region_name(region)
 
-        region_title = '# {0}\n'.format(region_name)
-        md_main.write('\n#' + region_title)
-        md_curr.write('\n' + region_title)
+        md_main.write('\n## {0}\n'.format(region_name))
+        md_curr.write('\n# {0}\n'.format(region_name))
 
     if not row['Store Name'] == store:
         store = row['Store Name']
 
-        store_title = '## [{0}]({1})\n'.format(store, get_store_link(store))
-        md_main.write('\n#' + store_title)
-        md_curr.write('\n' + store_title)
+        store_title = '[{0}]({1})'.format(store, get_store_link(store))
+        md_main.write('\n**{0}**\n'.format(store_title))
+        md_curr.write('\n## {0}\n'.format(store_title))
 
     image_link = '<img src="{0}"/>\n'.format(row['Link'])
     md_main.write(image_link)
