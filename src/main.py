@@ -11,7 +11,7 @@ STORE_LIST = 'https://www.apple.com/retail/storelist/'
 XPATH_MAIN = '//section[contains(@class,"section-store-summary") or contains(@class, "section-hero")]//figure[not(contains(@class, "360") or contains(@class,"loading"))]/@class'
 XPATH_ADDITIONAL = '//div[contains(@class,"section-drawer")]//figure[not(contains(@class, "reptiles") or @class="image")]/@class'
 XPATH_STYLESHEET = '//link[contains(@href, "store.built.css") or contains(@href, "store.css")]/@href'
-IMAGE_SUFFIX = '_large_2x.jpg'
+IMAGE_SUFFIX = '_2x.jpg'
 APPLE_COM = 'https://www.apple.com'
 logging.basicConfig(filename='main.log', filemode='w', level=logging.INFO)
 
@@ -163,7 +163,11 @@ def find_url_in_style(name, style):
         return ""
     else:
         link = re.findall('url\("(.*)' + IMAGE_SUFFIX, partial_style+IMAGE_SUFFIX)[0]
-        return APPLE_COM + link + IMAGE_SUFFIX
+        link = link + IMAGE_SUFFIX
+        if link.find("://") > -1:
+            return link
+        else:
+            return APPLE_COM + link
 
 def find_all_image_url(link):
     """

@@ -23,18 +23,18 @@ for index, row in df_images.iterrows():
         region = row['Region']
         md_curr.close() if md_curr else None
 
-        md_main.write('## ' + region + '\n')
+        md_main.write('\n## ' + region + '\n')
 
         os.makedirs(gallery_root + region, exist_ok=True)
         md_curr = open(gallery_root + region + '/README.md', 'w')
-        md_curr.write('## ' + region + '\n')
+        md_curr.write('\n## ' + region + '\n')
 
     if not row['Store Name'] == store:
         store = row['Store Name']
 
-        md_main.write('### ' + store + "\n")
+        md_main.write('\n### ' + store + "\n")
 
-        md_curr.write('## ' + store + "\n")
+        md_curr.write('\n## ' + store + "\n")
 
     md_main.write('<img src="' + str(row['Link']) + '"/>\n')
     md_curr.write('<img src="' + str(row['Link']) + '"/>\n')
