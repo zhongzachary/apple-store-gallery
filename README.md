@@ -22,7 +22,7 @@ Apple lists its worldwide retail stores [here](https://www.apple.com/retail/stor
 
 I recommend Chrome extension [Scraper](https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd) for pulling tabular information in a website.
 
-![image-scraping-store-list](Supporting Files/image-scraping-store-list.png)
+![image-scraping-store-list](supporting/image-scraping-store-list.png)
 
 A list of stores with links is also stored in [here](./output/apple_store_list.csv) as a CSV.
 
@@ -34,7 +34,7 @@ There are different kinds of Apple Stores, and so are their websites. Here are t
 
 The most grandiose of them all are stores like [Apple Piazza Liberty](https://www.apple.com/it/retail/piazzaliberty/) in Milan, Italy or [Apple Fifth Avenue](https://www.apple.com/retail/fifthavenue/) in New York, USA. You can "explore" those stores through their websites. These websites have multiple containers to display many images of their stores.
 
-<img src="Supporting Files/image-apple-piazza-liberty.png" alt="Apple Piazza Liberty" style="zoom: 25%;" />
+<img src="supporting/image-apple-piazza-liberty.png" alt="Apple Piazza Liberty" style="zoom: 25%;" />
 
 We can search its main photo using the following XPath (see [Updating XPath](#Updating-XPath) for a small caveat):
 
@@ -52,7 +52,7 @@ And all the additional photos using
 
 Less grandiose stores only have a single container displaying multiple images, e.g. [Apple ifc mall](https://www.apple.com/hk/en/retail/ifcmall/). 
 
-<img src="Supporting Files/image-apple-ifc-mall.png" alt="Apple ifc mall" style="zoom:25%;" />
+<img src="supporting/image-apple-ifc-mall.png" alt="Apple ifc mall" style="zoom:25%;" />
 
 To find all the relevant figure tags, use  
 
@@ -64,7 +64,7 @@ To find all the relevant figure tags, use
 
 Most store websites only have a single image showing off their store fronts. These stores can still look as good as ⭐️⭐️ Stores, or even the ⭐️⭐️⭐️ ones, e.g. [Apple 昆明](https://www.apple.com.cn/cn/retail/kunming/).
 
-<img src="Supporting Files/image-apple-kunming.png" alt="Apple 昆明" style="zoom:25%;" />
+<img src="supporting/image-apple-kunming.png" alt="Apple 昆明" style="zoom:25%;" />
 
 To get the location of the image, use the same XPath as the ⭐️⭐️ Stores.
 
