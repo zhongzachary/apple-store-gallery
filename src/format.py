@@ -8,7 +8,6 @@ from main import *
 
 df_stores = pd.read_csv('../output/apple_store_list.csv', index_col=0)
 df_images = pd.read_csv('../output/all_images.csv')
-df_images.sort_values(by='Region', inplace=True)
 
 
 def get_store_link(store_name):
