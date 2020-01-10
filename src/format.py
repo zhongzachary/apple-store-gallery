@@ -3,10 +3,12 @@ The file are used to create a markdown file containing images in out/all_images.
 """
 import os
 
-import pycountry as pycountry
+import pycountry
+import numpy as np
 from main import *
 
 df_images = pd.read_csv('../output/all_images.csv')
+df_images = df_images.iloc[np.lexsort((df_images.index, df_images.Region.values))]
 
 def get_region_name(code: str):
     """
