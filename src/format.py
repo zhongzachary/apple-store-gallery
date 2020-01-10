@@ -39,6 +39,8 @@ region = ''
 store = ''
 md_curr = None
 
+
+# creating region markdowns and ToC for main markdown
 for index, row in df_images.iterrows():
     if not row['Region'] == region:  # new region
         region = row['Region']
@@ -65,6 +67,7 @@ for index, row in df_images.iterrows():
 
 md_curr.close()
 
+# creating main markdown
 store = ''
 md_main.write('\n## Selected Stores\n')
 for index, row in df_images.iterrows():
@@ -78,3 +81,11 @@ for index, row in df_images.iterrows():
         md_main.write(image_link)
 
 md_main.close()
+
+# Apple Parc Central Eastern Egg
+md_parc_central = open('../output/apple_parc_central.md', 'w')
+md_parc_central.write("# [Apple Parc Central](https://www.apple.com.cn/cn/retail/parccentral/)\n")
+md_parc_central.write("Although there is only 1 image shown on Apple Parc Central's website, there are additional images hidden in Apple's server. Here they are.\n")
+parc_central_links = get_cn_hidden_images()
+[md_parc_central.write('\n<img src="{0}"/>\n'.format(image)) for image in parc_central_links]
+md_parc_central.close()

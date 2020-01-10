@@ -252,13 +252,13 @@ def find_all_image_urls(store):
 
 def get_cn_hidden_images():
     """
-    Eastern eggs in the following stylesheet.
+    Eastern eggs in the following stylesheet for Apple Parc Central in China
+    >>> len(get_cn_hidden_images())
     """
     cn_stylesheet = 'https://www.apple.com.cn/cn/retail/store/styles/store.built.css'
     content = requests.get(cn_stylesheet).content.decode()
-    items = re.findall('https(.*)retail/store/images/(.*)large_2x.jpg', content)
-    items = ['https' + item[0] + 'retail/store/images/' + item[1] + 'large_2x.jpg' for item in items]
-    return items
+    items = list(re.finditer('https(.*)parccentral(.*)large_2x.jpg', content))
+    return [content[item.start():item.end()] for item in items]
 
 
 def save_image(link, name):
