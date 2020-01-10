@@ -4,7 +4,7 @@ Have you ever wonder what Apple Stores look like in other countries? Are you loo
 
 ## Getting Around
 
-**To appreciate the some of the beautiful Apple Stores, go to [output/gallery](output/gallery).**
+**To appreciate the some of the beautiful Apple Stores, go to [output/gallery/README.md](output/gallery/README.md).**
 
 All the source code is located in [src](src).
 
